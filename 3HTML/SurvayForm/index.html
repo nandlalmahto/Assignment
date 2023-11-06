@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+   <div class="container">
+    <div class="formbody">
+        <div class="header">
+            <p>Customer Survey Form</p>
+        </div>
+
+        <div class="forminputbox">
+            <form action="#" id="myForm" onsubmit="return false;">   
+                <div class="elements name ">
+                    <div>
+                        <label for="fname">First Name</label><br>
+                        <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label><br>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+                    </div>
+                    
+                </div>
+
+                <div class="elements email">
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label><br>
+                        <input type="tel" name="phone" id="phone" placeholder="Mobile Number" minlength="10" maxlength="10" required>
+                    </div>
+                </div>
+                
+                <div class="elements dob">
+                    <label for="dob">DOB</label><br>
+                    <input type="date" name="dob" id="dob" placeholder="Select your DOB" required>
+                </div>
+    
+                <div class="elements country">
+                    <label for="country">Country</label><br>
+                    <select name="country" id="country" required>
+                        <option value="Select Country">Select Country</option>
+                        <option value="India">India</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Israel">Israel</option>
+                        <option value="SriLanka">SriLanka</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="America">America</option>
+                        <option value="South Africa">America</option>
+                    </select>
+                </div>
+    
+                <div class="elements gender">
+                    <label>Gender</label><br>
+                    <input type="radio" name="gender" id="male" value="Male">Male
+                    <input type="radio" name="gender" id="female" value="Female">Female
+                    <input type="radio" name="gender" id="Other" value="Other">Other
+                </div>
+    
+                <div class="elements">
+                    <label for="profession">Profession</label><br>
+                    <textarea type="text" name="profession" id="profession" cols="60" rows="6" placeholder="Write about your Profession or Carrier" required></textarea>
+                </div>
+
+                <div class="elements button">
+                    <button type="button" onclick="resetForm()" id="reset">Reset</button>
+                    <button type="button" onclick="formSubmit()">Submit</button>
+                </div>   
+    
+            </form>
+        </div>
+    </div>
+   
+   </div>
+
+   <!-- ********** Link Javascript *********-->
+   <script type="text/javascript" src="jscript.js"></script>
+
+
+</body>
+</html>
